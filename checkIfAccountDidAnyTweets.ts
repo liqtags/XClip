@@ -1,7 +1,9 @@
 import { buyTokenOnPumpFun } from "./buyTokenOnPumpFun.ts";
 import { bs58, Buffer, PublicKey, spl } from "./external.ts";
 import { getTokenAmountForSolanaAmount } from "./getTokenAmountForSolanaAmount.ts";
-import { lastSeenTweetId, scraper } from "./internal.ts";
+import { scraper, mpl, pumpProgram, options } from "./internal.ts";
+
+let lastSeenTweetId = null; // Last tweet ID we processed
 
 /**
  * Gets the Associated Token Account address for a given mint and owner

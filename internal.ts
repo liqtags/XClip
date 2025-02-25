@@ -49,7 +49,6 @@ const options = {
 // Twitter scraping configuration
 // ------------------------------------------------------------
 const scraper = new Scraper();
-let lastSeenTweetId = null;
 
 export {
     connection,
@@ -61,7 +60,6 @@ export {
     getTokenAmountForSolanaAmount,
     buyTokenOnPumpFun,
     scraper,
-    lastSeenTweetId,
     createWalletFromPrivateKey,
     checkIfAccountDidAnyTweets
 }
