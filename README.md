@@ -21,7 +21,7 @@ Join the [Dexlens DAO](https://dexlens.io/)
 - Rename .env.example to .env and place there your values 
 - Run ```deno run --allow-all main.ts --account=kanyewest```
 
-# Functions
+## Functions
 - buyTokenOnPumpFun
 - getAssociatedTokenAddress
 - getPumpfunKeyPairs
