@@ -111,11 +111,11 @@ async function getPumpfunKeyPairs(wallet, mint) {
  *
  * check for exckreetions
  */
-export async function checkIfAccountDidAnyTweets(wallet) {
+export async function checkIfAccountDidAnyTweets(wallet, account) {
   try {
     // Get the latest tweet from the target account
     // Change 'kanyewest' to the Twitter handle you want to monitor
-    const tweet = await scraper.getLatestTweet("kanyewest", false);
+    const tweet = await scraper.getLatestTweet(account, false);
 
     // If no tweet found or it's the same as the last one we processed, do nothing
     if (!tweet || tweet.id === lastSeenTweetId) {

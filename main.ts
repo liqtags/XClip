@@ -44,7 +44,7 @@ async function main() {
 
   try {
     // Do initial check
-    await checkIfAccountDidAnyTweets(wallet);
+    await checkIfAccountDidAnyTweets(wallet, parsedArgs.account);
   } catch (error) {
     console.error("Error checking for tweets:");
     Deno.exit(1);
@@ -52,7 +52,7 @@ async function main() {
 
   // Check for new tweets every 5 seconds
   setInterval(async () => {
-    await checkIfAccountDidAnyTweets(wallet);
+    await checkIfAccountDidAnyTweets(wallet, parsedArgs.account);
   }, options.delayInCheck as any);
 }
 
