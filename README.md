@@ -2,7 +2,7 @@
 XClip is an application that automatically extracts Solana pump addresses by scraping an X (formerly Twitter) account. This tool helps track and interact with token movements in Solana by monitoring social media activity.
 
 Twitter's API is annoying to work with, and has lots of limitations. 
-luckily there is this lib [Twitter Scraper by the-convocation](https://github.com/the-convocation/twitter-scraper)
+Luckily there is this lib [Twitter Scraper by the-convocation](https://github.com/the-convocation/twitter-scraper)
 
 Join the [Dexlens DAO](https://dexlens.io/)
 
