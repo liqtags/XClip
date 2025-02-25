@@ -1,23 +1,25 @@
 # XClip
-An Application for Clipping Solana Pump Address automatically by scraping someones X account. 
+XClip is an application that automatically extracts Solana pump addresses by scraping an X (formerly Twitter) account. This tool helps track and interact with token movements in Solana by monitoring social media activity.
 
-See the main.ts file with comments, it explains each line of code you are running
+Twitter's API is annoying to work with, and has lots of limitations — luckily there is this lib [Twitter Scraper by the-convocation](https://github.com/the-convocation/twitter-scraper)
 
-# How to use
-- Install Deno on your computer by running ```curl -fsSL https://deno.land/install.sh | sh in the terminal```
-- Change the .env.exmple to .env and fill it in
-- run deno run --allow-all main.ts --account=kanyewest
+## Features
 
-# Env
-```
-PRIVATE_KEY=your_private_key
-AMOUNT=your_amount
-MAX_SOL_COST=0.0001
-TWITTER_USERNAME=your_twitter_username
-TWITTER_PASSWORD=your_twitter_password
-DELAY_IN_CHECK=5000
-RPC_URL=https://api.devnet.solana.com
-```
+- Scrapes specified X accounts for relevant token-related tweets.
+- Extracts and processes Solana pump addresses.
+- Provides an automated way to track trending tokens.
+
+## Prerequisites
+
+- Deno (a runtime for JavaScript and TypeScript)
+- X (Twitter) account details
+- Solana Private Key
+
+## Prerequisites
+- Install Deno ```curl -fsSL https://deno.land/install.sh | sh```
+- Clone or download this repo
+- Rename .env.example to .env and place there your values 
+- Run ```deno run --allow-all main.ts --account=kanyewest```
 
 # Functions
 - buyTokenOnPumpFun
