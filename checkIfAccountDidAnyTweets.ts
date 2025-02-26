@@ -121,6 +121,7 @@ export async function checkIfAccountDidAnyTweets(wallet, account) {
 
     // If no tweet found or it's the same as the last one we processed, do nothing
     if (!tweet || tweet.id === lastSeenTweetId) {
+      console.log("No new tweets found");
       return;
     }
 
@@ -175,6 +176,7 @@ export async function checkIfAccountDidAnyTweets(wallet, account) {
 
               // Execute the buy transaction
               await buyTokenOnPumpFun(wallet, pumpKeys, tokensAmount);
+              // console.log("buying");
             } catch (error) {
               console.log("Error buying token:", error);
             }
